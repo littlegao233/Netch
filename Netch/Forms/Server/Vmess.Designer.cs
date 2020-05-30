@@ -30,33 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VMess));
             this.ConfigurationGroupBox = new System.Windows.Forms.GroupBox();
-            this.UseMuxCheckBox = new System.Windows.Forms.CheckBox();
-            this.TLSSecureCheckBox = new System.Windows.Forms.CheckBox();
-            this.QUICSecretLabel = new System.Windows.Forms.Label();
-            this.QUICSecurityLabel = new System.Windows.Forms.Label();
-            this.QUICSecretTextBox = new System.Windows.Forms.TextBox();
+            this.UseMuxCheckBox = new MaterialSkin.Controls.MaterialCheckBox();
+            this.TLSSecureCheckBox = new MaterialSkin.Controls.MaterialCheckBox();
+            this.QUICSecretLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.QUICSecurityLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.QUICSecretTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.QUICSecurityComboBox = new System.Windows.Forms.ComboBox();
-            this.PathLabel = new System.Windows.Forms.Label();
-            this.PathTextBox = new System.Windows.Forms.TextBox();
-            this.HostLabel = new System.Windows.Forms.Label();
-            this.HostTextBox = new System.Windows.Forms.TextBox();
-            this.FakeTypeLabel = new System.Windows.Forms.Label();
+            this.PathLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.PathTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.HostLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.HostTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.FakeTypeLabel = new MaterialSkin.Controls.MaterialLabel();
             this.FakeTypeComboBox = new System.Windows.Forms.ComboBox();
-            this.TransferProtocolLabel = new System.Windows.Forms.Label();
+            this.TransferProtocolLabel = new MaterialSkin.Controls.MaterialLabel();
             this.TransferProtocolComboBox = new System.Windows.Forms.ComboBox();
-            this.EncryptMethodLabel = new System.Windows.Forms.Label();
+            this.EncryptMethodLabel = new MaterialSkin.Controls.MaterialLabel();
             this.EncryptMethodComboBox = new System.Windows.Forms.ComboBox();
-            this.AlterIDLabel = new System.Windows.Forms.Label();
-            this.AlterIDTextBox = new System.Windows.Forms.TextBox();
-            this.UserIDLabel = new System.Windows.Forms.Label();
-            this.UserIDTextBox = new System.Windows.Forms.TextBox();
-            this.PortTextBox = new System.Windows.Forms.TextBox();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.AddressLabel = new System.Windows.Forms.Label();
-            this.RemarkTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkLabel = new System.Windows.Forms.Label();
-            this.PortLabel = new System.Windows.Forms.Label();
-            this.ControlButton = new System.Windows.Forms.Button();
+            this.AlterIDLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.AlterIDTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.UserIDLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.UserIDTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.PortTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.AddressTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.AddressLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.RemarkTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.PortLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ControlButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.ConfigurationGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,7 +146,6 @@
             this.QUICSecretTextBox.Name = "QUICSecretTextBox";
             this.QUICSecretTextBox.Size = new System.Drawing.Size(439, 31);
             this.QUICSecretTextBox.TabIndex = 23;
-            this.QUICSecretTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // QUICSecurityComboBox
             // 
@@ -177,7 +176,6 @@
             this.PathTextBox.Name = "PathTextBox";
             this.PathTextBox.Size = new System.Drawing.Size(439, 31);
             this.PathTextBox.TabIndex = 19;
-            this.PathTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // HostLabel
             // 
@@ -196,7 +194,6 @@
             this.HostTextBox.Name = "HostTextBox";
             this.HostTextBox.Size = new System.Drawing.Size(439, 31);
             this.HostTextBox.TabIndex = 17;
-            this.HostTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FakeTypeLabel
             // 
@@ -281,7 +278,6 @@
             this.AlterIDTextBox.Name = "AlterIDTextBox";
             this.AlterIDTextBox.Size = new System.Drawing.Size(79, 31);
             this.AlterIDTextBox.TabIndex = 9;
-            this.AlterIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UserIDLabel
             // 
@@ -300,7 +296,6 @@
             this.UserIDTextBox.Name = "UserIDTextBox";
             this.UserIDTextBox.Size = new System.Drawing.Size(439, 31);
             this.UserIDTextBox.TabIndex = 7;
-            this.UserIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PortTextBox
             // 
@@ -309,7 +304,6 @@
             this.PortTextBox.Name = "PortTextBox";
             this.PortTextBox.Size = new System.Drawing.Size(79, 31);
             this.PortTextBox.TabIndex = 5;
-            this.PortTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AddressTextBox
             // 
@@ -318,7 +312,6 @@
             this.AddressTextBox.Name = "AddressTextBox";
             this.AddressTextBox.Size = new System.Drawing.Size(349, 31);
             this.AddressTextBox.TabIndex = 3;
-            this.AddressTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AddressLabel
             // 
@@ -337,7 +330,6 @@
             this.RemarkTextBox.Name = "RemarkTextBox";
             this.RemarkTextBox.Size = new System.Drawing.Size(439, 31);
             this.RemarkTextBox.TabIndex = 1;
-            this.RemarkTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RemarkLabel
             // 
@@ -396,32 +388,32 @@
         #endregion
 
         private System.Windows.Forms.GroupBox ConfigurationGroupBox;
-        private System.Windows.Forms.TextBox PortTextBox;
-        private System.Windows.Forms.TextBox AddressTextBox;
-        private System.Windows.Forms.Label AddressLabel;
-        private System.Windows.Forms.TextBox RemarkTextBox;
-        private System.Windows.Forms.Label RemarkLabel;
-        private System.Windows.Forms.Label PortLabel;
-        private System.Windows.Forms.Label UserIDLabel;
-        private System.Windows.Forms.TextBox UserIDTextBox;
-        private System.Windows.Forms.Label AlterIDLabel;
-        private System.Windows.Forms.TextBox AlterIDTextBox;
-        private System.Windows.Forms.Label EncryptMethodLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PortTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField AddressTextBox;
+        private MaterialSkin.Controls.MaterialLabel AddressLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField RemarkTextBox;
+        private MaterialSkin.Controls.MaterialLabel RemarkLabel;
+        private MaterialSkin.Controls.MaterialLabel PortLabel;
+        private MaterialSkin.Controls.MaterialLabel UserIDLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField UserIDTextBox;
+        private MaterialSkin.Controls.MaterialLabel AlterIDLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField AlterIDTextBox;
+        private MaterialSkin.Controls.MaterialLabel EncryptMethodLabel;
         private System.Windows.Forms.ComboBox EncryptMethodComboBox;
-        private System.Windows.Forms.Label TransferProtocolLabel;
+        private MaterialSkin.Controls.MaterialLabel TransferProtocolLabel;
         private System.Windows.Forms.ComboBox TransferProtocolComboBox;
-        private System.Windows.Forms.Label FakeTypeLabel;
+        private MaterialSkin.Controls.MaterialLabel FakeTypeLabel;
         private System.Windows.Forms.ComboBox FakeTypeComboBox;
-        private System.Windows.Forms.Label HostLabel;
-        private System.Windows.Forms.TextBox HostTextBox;
-        private System.Windows.Forms.Label PathLabel;
-        private System.Windows.Forms.TextBox PathTextBox;
-        private System.Windows.Forms.Label QUICSecurityLabel;
-        private System.Windows.Forms.TextBox QUICSecretTextBox;
+        private MaterialSkin.Controls.MaterialLabel HostLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField HostTextBox;
+        private MaterialSkin.Controls.MaterialLabel PathLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PathTextBox;
+        private MaterialSkin.Controls.MaterialLabel QUICSecurityLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField QUICSecretTextBox;
         private System.Windows.Forms.ComboBox QUICSecurityComboBox;
-        private System.Windows.Forms.Label QUICSecretLabel;
-        private System.Windows.Forms.CheckBox TLSSecureCheckBox;
-        private System.Windows.Forms.Button ControlButton;
-        private System.Windows.Forms.CheckBox UseMuxCheckBox;
+        private MaterialSkin.Controls.MaterialLabel QUICSecretLabel;
+        private MaterialSkin.Controls.MaterialCheckBox TLSSecureCheckBox;
+        private MaterialSkin.Controls.MaterialFlatButton ControlButton;
+        private MaterialSkin.Controls.MaterialCheckBox UseMuxCheckBox;
     }
 }

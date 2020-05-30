@@ -11,6 +11,8 @@ using System.ServiceProcess;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Button = MaterialSkin.Controls.MaterialFlatButton;
+
 
 namespace Netch.Forms
 {
@@ -55,7 +57,7 @@ namespace Netch.Forms
             // 监听电源事件
             SystemEvents.PowerModeChanged += new PowerModeChangedEventHandler(SystemEvents_PowerModeChanged);
 
-            VersionLabel.Text = UpdateChecker.Version;
+            VersionLabel.Text = UpdateChecker.Version + "-Enhanced by gxh";
 
             CheckForIllegalCrossThreadCalls = false;
             // MenuStrip.Renderer = new Override.ToolStripProfessionalRender();
@@ -255,7 +257,7 @@ namespace Netch.Forms
         private void SaveConfigs()
         {
             Global.Settings.ServerComboBoxSelectedIndex = ServerComboBox.SelectedIndex;
-            if (ModeComboBox.Items.Count!=0 && ModeComboBox.SelectedItem != null)
+            if (ModeComboBox.Items.Count != 0 && ModeComboBox.SelectedItem != null)
             {
 
                 if (ModeComboBox.Tag is object[] list)
@@ -1520,6 +1522,16 @@ namespace Netch.Forms
                     Enabled = true;
                 }
             });
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            //materialFlatButton1.Text = System.Windows.Application.Current.Windows.ToString();
         }
     }
 }

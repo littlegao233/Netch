@@ -30,25 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShadowsocksR));
             this.ConfigurationGroupBox = new System.Windows.Forms.GroupBox();
-            this.OBFSParamLabel = new System.Windows.Forms.Label();
-            this.OBFSOptionParamTextBox = new System.Windows.Forms.TextBox();
-            this.OBFSLabel = new System.Windows.Forms.Label();
+            this.OBFSParamLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.OBFSOptionParamTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.OBFSLabel = new MaterialSkin.Controls.MaterialLabel();
             this.OBFSComboBox = new System.Windows.Forms.ComboBox();
-            this.ProtocolParamLabel = new System.Windows.Forms.Label();
-            this.ProtocolParamTextBox = new System.Windows.Forms.TextBox();
-            this.ProtocolLabel = new System.Windows.Forms.Label();
+            this.ProtocolParamLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ProtocolParamTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.ProtocolLabel = new MaterialSkin.Controls.MaterialLabel();
             this.ProtocolComboBox = new System.Windows.Forms.ComboBox();
-            this.EncryptMethodLabel = new System.Windows.Forms.Label();
+            this.EncryptMethodLabel = new MaterialSkin.Controls.MaterialLabel();
             this.EncryptMethodComboBox = new System.Windows.Forms.ComboBox();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.AddressLabel = new System.Windows.Forms.Label();
-            this.PortTextBox = new System.Windows.Forms.TextBox();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkLabel = new System.Windows.Forms.Label();
-            this.PortLabel = new System.Windows.Forms.Label();
-            this.ControlButton = new System.Windows.Forms.Button();
+            this.PasswordTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.PasswordLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.AddressLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.PortTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.AddressTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.PortLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ControlButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.ConfigurationGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +94,6 @@
             this.OBFSOptionParamTextBox.Name = "OBFSParamTextBox";
             this.OBFSOptionParamTextBox.Size = new System.Drawing.Size(294, 23);
             this.OBFSOptionParamTextBox.TabIndex = 17;
-            this.OBFSOptionParamTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // OBFSLabel
             // 
@@ -131,7 +130,6 @@
             this.ProtocolParamTextBox.Name = "ProtocolParamTextBox";
             this.ProtocolParamTextBox.Size = new System.Drawing.Size(294, 23);
             this.ProtocolParamTextBox.TabIndex = 13;
-            this.ProtocolParamTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ProtocolLabel
             // 
@@ -179,7 +177,6 @@
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(294, 23);
             this.PasswordTextBox.TabIndex = 7;
-            this.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PasswordLabel
             // 
@@ -205,7 +202,6 @@
             this.PortTextBox.Name = "PortTextBox";
             this.PortTextBox.Size = new System.Drawing.Size(56, 23);
             this.PortTextBox.TabIndex = 5;
-            this.PortTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AddressTextBox
             // 
@@ -213,7 +209,6 @@
             this.AddressTextBox.Name = "AddressTextBox";
             this.AddressTextBox.Size = new System.Drawing.Size(232, 23);
             this.AddressTextBox.TabIndex = 3;
-            this.AddressTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RemarkTextBox
             // 
@@ -221,7 +216,6 @@
             this.RemarkTextBox.Name = "RemarkTextBox";
             this.RemarkTextBox.Size = new System.Drawing.Size(294, 23);
             this.RemarkTextBox.TabIndex = 1;
-            this.RemarkTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RemarkLabel
             // 
@@ -277,24 +271,24 @@
         #endregion
 
         private System.Windows.Forms.GroupBox ConfigurationGroupBox;
-        private System.Windows.Forms.Button ControlButton;
-        private System.Windows.Forms.Label RemarkLabel;
-        private System.Windows.Forms.TextBox RemarkTextBox;
-        private System.Windows.Forms.Label PortLabel;
-        private System.Windows.Forms.TextBox AddressTextBox;
-        private System.Windows.Forms.TextBox PortTextBox;
-        private System.Windows.Forms.Label AddressLabel;
-        private System.Windows.Forms.Label EncryptMethodLabel;
+        private MaterialSkin.Controls.MaterialFlatButton ControlButton;
+        private MaterialSkin.Controls.MaterialLabel RemarkLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField RemarkTextBox;
+        private MaterialSkin.Controls.MaterialLabel PortLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField AddressTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PortTextBox;
+        private MaterialSkin.Controls.MaterialLabel AddressLabel;
+        private MaterialSkin.Controls.MaterialLabel EncryptMethodLabel;
         private System.Windows.Forms.ComboBox EncryptMethodComboBox;
-        private System.Windows.Forms.TextBox PasswordTextBox;
-        private System.Windows.Forms.Label PasswordLabel;
-        private System.Windows.Forms.Label ProtocolLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PasswordTextBox;
+        private MaterialSkin.Controls.MaterialLabel PasswordLabel;
+        private MaterialSkin.Controls.MaterialLabel ProtocolLabel;
         private System.Windows.Forms.ComboBox ProtocolComboBox;
-        private System.Windows.Forms.TextBox ProtocolParamTextBox;
-        private System.Windows.Forms.Label ProtocolParamLabel;
-        private System.Windows.Forms.Label OBFSLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField ProtocolParamTextBox;
+        private MaterialSkin.Controls.MaterialLabel ProtocolParamLabel;
+        private MaterialSkin.Controls.MaterialLabel OBFSLabel;
         private System.Windows.Forms.ComboBox OBFSComboBox;
-        private System.Windows.Forms.TextBox OBFSOptionParamTextBox;
-        private System.Windows.Forms.Label OBFSParamLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField OBFSOptionParamTextBox;
+        private MaterialSkin.Controls.MaterialLabel OBFSParamLabel;
     }
 }

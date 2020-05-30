@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Process));
             this.ConfigurationGroupBox = new System.Windows.Forms.GroupBox();
-            this.UseCustomFilenameBox = new System.Windows.Forms.CheckBox();
+            this.UseCustomFilenameBox = new MaterialSkin.Controls.MaterialCheckBox();
             this.TimeDataButton = new System.Windows.Forms.RadioButton();
             this.StaySameButton = new System.Windows.Forms.RadioButton();
-            this.FilenameLabel = new System.Windows.Forms.Label();
-            this.FilenameTextBox = new System.Windows.Forms.TextBox();
-            this.ScanButton = new System.Windows.Forms.Button();
+            this.FilenameLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.FilenameTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.ScanButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.ProcessGroupBox = new System.Windows.Forms.GroupBox();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.ProcessNameTextBox = new System.Windows.Forms.TextBox();
+            this.AddButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.ProcessNameTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.RuleListBox = new System.Windows.Forms.ListBox();
-            this.RemarkTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkLabel = new System.Windows.Forms.Label();
-            this.ControlButton = new System.Windows.Forms.Button();
+            this.RemarkTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ControlButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.ConfigurationGroupBox.SuspendLayout();
             this.ProcessGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -216,18 +216,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox ConfigurationGroupBox;
-        private System.Windows.Forms.Label RemarkLabel;
+        private MaterialSkin.Controls.MaterialLabel RemarkLabel;
         private System.Windows.Forms.GroupBox ProcessGroupBox;
         private System.Windows.Forms.ListBox RuleListBox;
-        private System.Windows.Forms.TextBox RemarkTextBox;
-        private System.Windows.Forms.TextBox ProcessNameTextBox;
-        private System.Windows.Forms.Button AddButton;
-        private System.Windows.Forms.Button ScanButton;
-        private System.Windows.Forms.Button ControlButton;
-        private System.Windows.Forms.Label FilenameLabel;
-        private System.Windows.Forms.TextBox FilenameTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField RemarkTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField ProcessNameTextBox;
+        private MaterialSkin.Controls.MaterialFlatButton AddButton;
+        private MaterialSkin.Controls.MaterialFlatButton ScanButton;
+        private MaterialSkin.Controls.MaterialFlatButton ControlButton;
+        private MaterialSkin.Controls.MaterialLabel FilenameLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField FilenameTextBox;
         private System.Windows.Forms.RadioButton StaySameButton;
         private System.Windows.Forms.RadioButton TimeDataButton;
-        private System.Windows.Forms.CheckBox UseCustomFilenameBox;
+        private MaterialSkin.Controls.MaterialCheckBox UseCustomFilenameBox;
     }
 }

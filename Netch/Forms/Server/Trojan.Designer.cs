@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trojan));
             this.ConfigurationGroupBox = new System.Windows.Forms.GroupBox();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.AddressLabel = new System.Windows.Forms.Label();
-            this.PortTextBox = new System.Windows.Forms.TextBox();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkLabel = new System.Windows.Forms.Label();
-            this.PortLabel = new System.Windows.Forms.Label();
-            this.ControlButton = new System.Windows.Forms.Button();
+            this.PasswordTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.PasswordLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.AddressLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.PortTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.AddressTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.PortLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ControlButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.ConfigurationGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +65,6 @@
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(294, 23);
             this.PasswordTextBox.TabIndex = 7;
-            this.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PasswordLabel
             // 
@@ -91,7 +90,6 @@
             this.PortTextBox.Name = "PortTextBox";
             this.PortTextBox.Size = new System.Drawing.Size(56, 23);
             this.PortTextBox.TabIndex = 5;
-            this.PortTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AddressTextBox
             // 
@@ -99,7 +97,6 @@
             this.AddressTextBox.Name = "AddressTextBox";
             this.AddressTextBox.Size = new System.Drawing.Size(232, 23);
             this.AddressTextBox.TabIndex = 3;
-            this.AddressTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RemarkTextBox
             // 
@@ -107,7 +104,6 @@
             this.RemarkTextBox.Name = "RemarkTextBox";
             this.RemarkTextBox.Size = new System.Drawing.Size(294, 23);
             this.RemarkTextBox.TabIndex = 1;
-            this.RemarkTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RemarkLabel
             // 
@@ -163,14 +159,14 @@
         #endregion
 
         private System.Windows.Forms.GroupBox ConfigurationGroupBox;
-        private System.Windows.Forms.Button ControlButton;
-        private System.Windows.Forms.Label RemarkLabel;
-        private System.Windows.Forms.TextBox RemarkTextBox;
-        private System.Windows.Forms.Label PortLabel;
-        private System.Windows.Forms.TextBox AddressTextBox;
-        private System.Windows.Forms.TextBox PortTextBox;
-        private System.Windows.Forms.Label AddressLabel;
-        private System.Windows.Forms.TextBox PasswordTextBox;
-        private System.Windows.Forms.Label PasswordLabel;
+        private MaterialSkin.Controls.MaterialFlatButton ControlButton;
+        private MaterialSkin.Controls.MaterialLabel RemarkLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField RemarkTextBox;
+        private MaterialSkin.Controls.MaterialLabel PortLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField AddressTextBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PortTextBox;
+        private MaterialSkin.Controls.MaterialLabel AddressLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField PasswordTextBox;
+        private MaterialSkin.Controls.MaterialLabel PasswordLabel;
     }
 }

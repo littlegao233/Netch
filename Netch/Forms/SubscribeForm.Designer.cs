@@ -31,22 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubscribeForm));
             this.AddSubscriptionBox = new System.Windows.Forms.GroupBox();
-            this.UserAgentTextBox = new System.Windows.Forms.TextBox();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.UserAgentLabel = new System.Windows.Forms.Label();
-            this.LinkTextBox = new System.Windows.Forms.TextBox();
-            this.LinkLabel = new System.Windows.Forms.Label();
-            this.RemarkTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkLabel = new System.Windows.Forms.Label();
-            this.ControlButton = new System.Windows.Forms.Button();
+            this.UserAgentTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.AddButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.UserAgentLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.LinkTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.LinkLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.RemarkTextBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.RemarkLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.ControlButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.SubscribeLinkListView = new System.Windows.Forms.ListView();
             this.RemarkColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.LinkColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.UserAgentHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.DeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CopyLinkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UseSelectedServerCheckBox = new System.Windows.Forms.CheckBox();
+            this.DeleteToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
+            this.CopyLinkToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
+            this.UseSelectedServerCheckBox = new MaterialSkin.Controls.MaterialCheckBox();
             this.AddSubscriptionBox.SuspendLayout();
             this.pContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -228,21 +228,21 @@
 
         #endregion
         private System.Windows.Forms.GroupBox AddSubscriptionBox;
-        private System.Windows.Forms.Label RemarkLabel;
-        private System.Windows.Forms.TextBox LinkTextBox;
-        private System.Windows.Forms.Label LinkLabel;
-        private System.Windows.Forms.TextBox RemarkTextBox;
-        private System.Windows.Forms.Button AddButton;
-        private System.Windows.Forms.Button ControlButton;
+        private MaterialSkin.Controls.MaterialLabel RemarkLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField LinkTextBox;
+        private MaterialSkin.Controls.MaterialLabel LinkLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField RemarkTextBox;
+        private MaterialSkin.Controls.MaterialFlatButton AddButton;
+        private MaterialSkin.Controls.MaterialFlatButton ControlButton;
         private System.Windows.Forms.ListView SubscribeLinkListView;
         private System.Windows.Forms.ColumnHeader RemarkColumnHeader;
         private System.Windows.Forms.ColumnHeader LinkColumnHeader;
         private System.Windows.Forms.ContextMenuStrip pContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem DeleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem CopyLinkToolStripMenuItem;
-        private System.Windows.Forms.Label UserAgentLabel;
-        private System.Windows.Forms.TextBox UserAgentTextBox;
+        private MaterialSkin.Controls.MaterialToolStripMenuItem DeleteToolStripMenuItem;
+        private MaterialSkin.Controls.MaterialToolStripMenuItem CopyLinkToolStripMenuItem;
+        private MaterialSkin.Controls.MaterialLabel UserAgentLabel;
+        private MaterialSkin.Controls.MaterialSingleLineTextField UserAgentTextBox;
         private System.Windows.Forms.ColumnHeader UserAgentHeader;
-        private System.Windows.Forms.CheckBox UseSelectedServerCheckBox;
+        private MaterialSkin.Controls.MaterialCheckBox UseSelectedServerCheckBox;
     }
 }
