@@ -1,3 +1,4 @@
+
 using Microsoft.Win32;
 using Netch.Controllers;
 using Netch.Utils;
@@ -315,20 +316,20 @@ namespace Netch.Forms
                         }
 
                         // 绘制延迟底色
-                        e.Graphics.FillRectangle(brush, ServerComboBox.Size.Width - 60, e.Bounds.Y, 60, e.Bounds.Height);
+                        e.Graphics.FillRectangle(brush, ServerComboBox.Size.Width - 90, e.Bounds.Y, 60, e.Bounds.Height);
 
                         // 绘制延迟字符串
-                        e.Graphics.DrawString(item.Delay.ToString(), cbx.Font, new SolidBrush(Color.Black), ServerComboBox.Size.Width - 58, e.Bounds.Y);
+                        e.Graphics.DrawString(item.Delay.ToString(), cbx.Font, new SolidBrush(Color.Black), ServerComboBox.Size.Width - 88, e.Bounds.Y);
                     }
                     else if (cbx.Items[e.Index] is Models.Mode)
                     {
                         var item = cbx.Items[e.Index] as Models.Mode;
 
                         // 绘制延迟底色
-                        e.Graphics.FillRectangle(new SolidBrush(Color.Gray), ServerComboBox.Size.Width - 60, e.Bounds.Y, 60, e.Bounds.Height);
+                        e.Graphics.FillRectangle(new SolidBrush(Color.Gray), ServerComboBox.Size.Width - 90, e.Bounds.Y, 60, e.Bounds.Height);
 
                         // 绘制延迟字符串
-                        e.Graphics.DrawString(item.Rule.Count.ToString(), cbx.Font, new SolidBrush(Color.Black), ServerComboBox.Size.Width - 58, e.Bounds.Y);
+                        e.Graphics.DrawString(item.Rule.Count.ToString(), cbx.Font, new SolidBrush(Color.Black), ServerComboBox.Size.Width - 88, e.Bounds.Y);
                     }
                 }
             }
@@ -1523,15 +1524,27 @@ namespace Netch.Forms
                 }
             });
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private WPFMainWin WinSource = null;
+        public WPFMainWin WPFWin
         {
-
+            get
+            {
+                if (WinSource == null)
+                {
+                    WinSource = new WPFMainWin();
+                    WinSource.Closed += (sender, e) =>
+                    {
+                        WinSource = null;
+                    };
+                     WinSource.ShowInTaskbar = false;
+                }
+                return WinSource;
+            }
         }
-
         private void materialFlatButton1_Click(object sender, EventArgs e)
         {
-            //materialFlatButton1.Text = System.Windows.Application.Current.Windows.ToString();
+            WPFWin.Show();
+            WPFWin.Activate();
         }
     }
 }

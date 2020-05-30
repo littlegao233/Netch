@@ -425,7 +425,6 @@ namespace Netch.Forms
             // ModeComboBox
             // 
             this.ModeComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.ModeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ModeComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ModeComboBox.FormattingEnabled = true;
             this.ModeComboBox.IntegralHeight = false;
@@ -718,7 +717,7 @@ namespace Netch.Forms
             this.materialFlatButton1.Primary = false;
             this.materialFlatButton1.Size = new System.Drawing.Size(292, 44);
             this.materialFlatButton1.TabIndex = 14;
-            this.materialFlatButton1.Text = "高级界面";
+            this.materialFlatButton1.Text = "服务器列表";
             this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
             // tableLayoutPanel1
@@ -736,7 +735,6 @@ namespace Netch.Forms
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(900, 56);
             this.tableLayoutPanel1.TabIndex = 15;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // MainForm
             // 
