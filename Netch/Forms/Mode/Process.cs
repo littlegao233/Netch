@@ -329,5 +329,10 @@ namespace Netch.Forms.Mode
                 FilenameLabel.Enabled = false;
             }
         }
+
+        private void ProcessNameTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
