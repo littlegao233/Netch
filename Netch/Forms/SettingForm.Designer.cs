@@ -381,8 +381,6 @@
             // 
             // BehaviorGroupBox
             // 
-            this.BehaviorGroupBox.Controls.Add(this.LanguageLabel);
-            this.BehaviorGroupBox.Controls.Add(this.LanguageComboBox);
             this.BehaviorGroupBox.Controls.Add(this.BootShadowsocksFromDLLCheckBox);
             this.BehaviorGroupBox.Controls.Add(this.AclAddr);
             this.BehaviorGroupBox.Controls.Add(this.AclLabel);
@@ -410,24 +408,6 @@
             this.BehaviorGroupBox.TabIndex = 8;
             this.BehaviorGroupBox.TabStop = false;
             this.BehaviorGroupBox.Text = "Behavior";
-            // 
-            // LanguageLabel
-            // 
-            this.LanguageLabel.AutoSize = true;
-            this.LanguageLabel.Location = new System.Drawing.Point(12, 305);
-            this.LanguageLabel.Name = "LanguageLabel";
-            this.LanguageLabel.Size = new System.Drawing.Size(65, 17);
-            this.LanguageLabel.TabIndex = 23;
-            this.LanguageLabel.Text = "Language";
-            // 
-            // LanguageComboBox
-            // 
-            this.LanguageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.LanguageComboBox.FormattingEnabled = true;
-            this.LanguageComboBox.Location = new System.Drawing.Point(120, 302);
-            this.LanguageComboBox.Name = "LanguageComboBox";
-            this.LanguageComboBox.Size = new System.Drawing.Size(121, 25);
-            this.LanguageComboBox.TabIndex = 22;
             // 
             // BootShadowsocksFromDLLCheckBox
             // 

@@ -115,19 +115,19 @@ namespace Netch.Utils
                 }
             });
 
-            if ((Convert.ToInt32(MainForm.Instance.LastDownloadBandwidth) - Convert.ToInt32(received)) == 0)
-            {
-                MainForm.Instance.OnBandwidthUpdated(0);
-                received = 0;
-            }
-            while (MainForm.Instance.State != State.Stopped)
-            {
-                Task.Delay(1000).Wait();
-                lock (counterLock)
-                {
-                    MainForm.Instance.OnBandwidthUpdated(Convert.ToInt64(received));
-                }
-            }
+            //if ((Convert.ToInt32(MainForm.Instance.LastDownloadBandwidth) - Convert.ToInt32(received)) == 0)
+            //{
+            //    MainForm.Instance.OnBandwidthUpdated(0);
+            //    received = 0;
+            //}
+            //while (MainForm.Instance.State != State.Stopped)
+            //{
+            //    Task.Delay(1000).Wait();
+            //    lock (counterLock)
+            //    {
+            //        MainForm.Instance.OnBandwidthUpdated(Convert.ToInt64(received));
+            //    }
+            //}
 
         }
     }

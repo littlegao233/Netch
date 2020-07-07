@@ -50,12 +50,17 @@
 
     <ItemGroup>
         <PackageReference Include="Costura.Fody" Version="4.1.0" />
+        <PackageReference Include="Fody" Version="6.2.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="ini-parser" Version="2.5.2" />
         <PackageReference Include="MaterialDesignExtensions" Version="3.1.0" />
         <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />
         <PackageReference Include="MaterialSkin" Version="0.2.1" />
         <PackageReference Include="MaxMind.GeoIP2" Version="3.2.0" />
         <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="2.0.56" />
+        <PackageReference Include="MvvmLight" Version="5.4.1.1" />
         <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
         <PackageReference Include="System.Buffers" Version="4.5.1" />
         <PackageReference Include="WindowsAPICodePack-Shell" Version="1.1.1" />
@@ -102,6 +107,6 @@
     </ItemGroup>
     <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-      <Exec Command="@ECHO OFF&#xD;&#xA;RD /S /Q $(TargetDir)bin &gt; NUL 2&gt;&amp;1&#xD;&#xA;RD /S /Q $(TargetDir)i18n &gt; NUL 2&gt;&amp;1&#xD;&#xA;RD /S /Q $(TargetDir)mode &gt; NUL 2&gt;&amp;1&#xD;&#xA;&#xD;&#xA;MKDIR $(TargetDir)bin &gt; NUL 2&gt;&amp;1&#xD;&#xA;MKDIR $(TargetDir)i18n &gt; NUL 2&gt;&amp;1&#xD;&#xA;MKDIR $(TargetDir)mode &gt; NUL 2&gt;&amp;1&#xD;&#xA;&#xD;&#xA;COPY /Y $(SolutionDir)binaries\* $(TargetDir)bin &gt; NUL 2&gt;&amp;1&#xD;&#xA;COPY /Y $(SolutionDir)translations\i18n\* $(TargetDir)i18n &gt; NUL 2&gt;&amp;1&#xD;&#xA;COPY /Y $(SolutionDir)modes\mode\* $(TargetDir)mode &gt; NUL 2&gt;&amp;1&#xD;&#xA;MKDIR $(TargetDir)bin\tap-driver &gt; NUL 2&gt;&amp;1&#xD;&#xA;COPY /Y $(SolutionDir)binaries\tap-driver\* $(TargetDir)bin\tap-driver &gt; NUL 2&gt;&amp;1&#xD;&#xA;&#xD;&#xA;DEL / f $(TargetDir)\*.config&#xD;&#xA;DEL / f $(TargetDir)\*.pdb&#xD;&#xA;RD /s /Q $(TargetDir)\x86" />
+      <Exec Command="@ECHO OFF&#xD;&#xA;RD /S /Q $(TargetDir)bin &gt; NUL 2&gt;&amp;1&#xD;&#xA;RD /S /Q $(TargetDir)i18n &gt; NUL 2&gt;&amp;1&#xD;&#xA;RD /S /Q $(TargetDir)mode &gt; NUL 2&gt;&amp;1&#xD;&#xA;&#xD;&#xA;MKDIR $(TargetDir)bin &gt; NUL 2&gt;&amp;1&#xD;&#xA;MKDIR $(TargetDir)i18n &gt; NUL 2&gt;&amp;1&#xD;&#xA;MKDIR $(TargetDir)mode &gt; NUL 2&gt;&amp;1&#xD;&#xA;&#xD;&#xA;COPY /Y $(SolutionDir)binaries\* $(TargetDir)bin &gt; NUL 2&gt;&amp;1&#xD;&#xA;COPY /Y $(SolutionDir)translations\i18n\* $(TargetDir)i18n &gt; NUL 2&gt;&amp;1&#xD;&#xA;COPY /Y $(SolutionDir)modes\mode\* $(TargetDir)mode &gt; NUL 2&gt;&amp;1&#xD;&#xA;MKDIR $(TargetDir)bin\tap-driver &gt; NUL 2&gt;&amp;1&#xD;&#xA;COPY /Y $(SolutionDir)binaries\tap-driver\* $(TargetDir)bin\tap-driver &gt; NUL 2&gt;&amp;1&#xD;&#xA;&#xD;&#xA;DEL / f $(TargetDir)\*.config&#xD;&#xA;DEL / f $(TargetDir)\*.pdb&#xD;&#xA;DEL / f $(TargetDir)\*.dll&#xD;&#xA;RD /s /Q $(TargetDir)\x86" />
     </Target>
 </Project>
