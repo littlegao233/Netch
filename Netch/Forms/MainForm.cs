@@ -6,11 +6,14 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
 using Microsoft.Win32;
 using Netch.Controllers;
 using Netch.Forms.Mode;
 using Netch.Models;
 using Netch.Utils;
+using NHotkey;
+using NHotkey.WindowsForms;
 
 namespace Netch.Forms
 {
@@ -28,14 +31,36 @@ namespace Netch.Forms
                 switch (args.KeyData)
                 {
                     case Keys.Escape:
-                    {
-                        SelectLastMode();
-                        return;
-                    }
+                        {
+                            SelectLastMode();
+                            return;
+                        }
                 }
             };
 
             CheckForIllegalCrossThreadCalls = false;
+
+            #region HotKey
+            HotkeyManager.Current.AddOrReplace("开启", Keys.F10   | Keys.Control, OnStart);
+            #endregion
+        }
+       
+        private void OnStart(object sender, HotkeyEventArgs e)
+        {
+            if (ControlButton.Enabled)
+            {
+                ControlButton.PerformClick();
+            }
+        }
+        public new void Show()
+        {
+            base.Show();
+            ShowInTaskbar = true;
+        }
+
+        public new void Hide()
+        {
+            ShowInTaskbar = false;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -44,8 +69,8 @@ namespace Netch.Forms
 
             #region i18N Translations
 
-            _mainFormText.Add(UninstallServiceToolStripMenuItem.Name, new[] {"Uninstall {0}", "NF Service"});
-            _mainFormText.Add(UninstallTapDriverToolStripMenuItem.Name, new[] {"Uninstall {0}", "TUN/TAP driver"});
+            _mainFormText.Add(UninstallServiceToolStripMenuItem.Name, new[] { "Uninstall {0}", "NF Service" });
+            _mainFormText.Add(UninstallTapDriverToolStripMenuItem.Name, new[] { "Uninstall {0}", "TUN/TAP driver" });
 
             #endregion
 
@@ -283,7 +308,7 @@ namespace Netch.Forms
 
             Configuration.Save();
 
-            foreach (var file in new[] {"data\\last.json", "data\\privoxy.conf"})
+            foreach (var file in new[] { "data\\last.json", "data\\privoxy.conf" })
             {
                 if (File.Exists(file))
                     File.Delete(file);
@@ -360,21 +385,21 @@ namespace Netch.Forms
                 return;
             }
 
-            var selectedMode = (Models.Mode) ModeComboBox.SelectedItem;
+            var selectedMode = (Models.Mode)ModeComboBox.SelectedItem;
             switch (selectedMode.Type)
             {
                 case 0:
-                {
-                    Hide();
-                    new Process(selectedMode).ShowDialog();
-                    Show();
-                    break;
-                }
+                    {
+                        Hide();
+                        new Process(selectedMode).ShowDialog();
+                        Show();
+                        break;
+                    }
                 default:
-                {
-                    MessageBoxX.Show($"Current not support editing {selectedMode.TypeToString()} Mode");
-                    break;
-                }
+                    {
+                        MessageBoxX.Show($"Current not support editing {selectedMode.TypeToString()} Mode");
+                        break;
+                    }
             }
         }
 
@@ -387,7 +412,7 @@ namespace Netch.Forms
                 return;
             }
 
-            ModeHelper.Delete((Models.Mode) ModeComboBox.SelectedItem);
+            ModeHelper.Delete((Models.Mode)ModeComboBox.SelectedItem);
             SelectLastMode();
         }
 
@@ -403,7 +428,7 @@ namespace Netch.Forms
             try
             {
                 //听说巨硬BUG经常会炸，所以Catch一下 :D
-                var server = (Server) ServerComboBox.SelectedItem;
+                var server = (Server)ServerComboBox.SelectedItem;
                 string text;
                 if (ModifierKeys == Keys.Control)
                 {
@@ -460,7 +485,7 @@ namespace Netch.Forms
             Exit();
         }
 
-        private void NotifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void NotifyIcon_MouseDoubleClick(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             if (WindowState == FormWindowState.Minimized)
             {
@@ -492,7 +517,7 @@ namespace Netch.Forms
             if (!_comboBoxInitialized) return;
             try
             {
-                Global.Settings.ModeComboBoxSelectedIndex = Global.Modes.IndexOf((Models.Mode) ModeComboBox.SelectedItem);
+                Global.Settings.ModeComboBoxSelectedIndex = Global.Modes.IndexOf((Models.Mode)ModeComboBox.SelectedItem);
             }
             catch
             {

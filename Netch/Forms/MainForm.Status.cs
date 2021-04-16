@@ -51,7 +51,7 @@ namespace Netch.Forms
                     case State.Waiting:
                         ControlButton.Enabled = true;
                         ControlButton.Text = i18N.Translate("Start");
-
+                        //NotifyTip("等待...");
                         break;
                     case State.Starting:
                         ControlButton.Enabled = false;
@@ -59,6 +59,7 @@ namespace Netch.Forms
 
                         ProfileGroupBox.Enabled = false;
                         StartDisableItems(false);
+                        NotifyTip("正在开启...");
                         break;
                     case State.Started:
                         ControlButton.Enabled = true;
@@ -69,6 +70,7 @@ namespace Netch.Forms
                         ProfileGroupBox.Enabled = true;
 
                         UsedBandwidthLabel.Visible /*= UploadSpeedLabel.Visible*/ = DownloadSpeedLabel.Visible = Global.Flags.IsWindows10Upper;
+                        NotifyTip("已开启。");
                         break;
                     case State.Stopping:
                         ControlButton.Enabled = false;
@@ -77,6 +79,7 @@ namespace Netch.Forms
                         ProfileGroupBox.Enabled = false;
                         UsedBandwidthLabel.Visible /*= UploadSpeedLabel.Visible*/ = DownloadSpeedLabel.Visible = false;
                         NatTypeStatusText();
+                        NotifyTip("正在停止...");
                         break;
                     case State.Stopped:
                         ControlButton.Enabled = true;
@@ -88,6 +91,7 @@ namespace Netch.Forms
 
                         ProfileGroupBox.Enabled = true;
                         StartDisableItems(true);
+                        NotifyTip("已停止。");
                         break;
                     case State.Terminating:
                         Dispose();
