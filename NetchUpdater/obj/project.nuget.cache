@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kR94aGrItq3Qf/9y5u1+ILhQkIxTNJjYuCzXCoAQfKfvjWKjMo4PjJNWl3kVIQ7Eqz+kFMOg81O3RTwbGaJfEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gaoxi\\.nuget\\packages\\costura.fody\\4.1.0\\costura.fody.4.1.0.nupkg.sha512",
+    "C:\\Users\\gaoxi\\.nuget\\packages\\fody\\6.3.0\\fody.6.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

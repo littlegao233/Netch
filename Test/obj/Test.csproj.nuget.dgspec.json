@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Test\\Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchLib\\NetchLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchLib\\NetchLib.csproj",
+        "projectName": "NetchLib",
+        "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchLib\\NetchLib.csproj",
+        "packagesPath": "C:\\Users\\gaoxi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gaoxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj",
+        "projectName": "NetchUpdater",
+        "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj",
+        "packagesPath": "C:\\Users\\gaoxi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gaoxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Netch\\Netch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Netch\\Netch.csproj",
+        "projectName": "Netch",
+        "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Netch\\Netch.csproj",
+        "packagesPath": "C:\\Users\\gaoxi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Netch\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gaoxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchLib\\NetchLib.csproj": {
+                "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchLib\\NetchLib.csproj"
+              },
+              "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj": {
+                "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "ILMerge": {
+              "target": "Package",
+              "version": "[3.0.41, )"
+            },
+            "MaxMind.GeoIP2": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Microsoft.Diagnostics.Tracing.TraceEvent": {
+              "target": "Package",
+              "version": "[2.0.62, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Reflection.Metadata": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "WindowsAPICodePack-Shell": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "WindowsJobAPI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Test\\Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Test\\Test.csproj",
+        "projectName": "Test",
+        "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Test\\Test.csproj",
+        "packagesPath": "C:\\Users\\gaoxi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gaoxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Netch\\Netch.csproj": {
+                "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\Netch\\Netch.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

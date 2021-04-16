@@ -1,0 +1,160 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Costura.Fody/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "6.0.0"
+        },
+        "compile": {
+          "lib/net40/Costura.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Costura.dll": {}
+        },
+        "build": {
+          "build/Costura.Fody.props": {}
+        }
+      },
+      "Fody/6.3.0": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win7-x64": {
+      "Costura.Fody/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "6.0.0"
+        },
+        "compile": {
+          "lib/net40/Costura.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Costura.dll": {}
+        },
+        "build": {
+          "build/Costura.Fody.props": {}
+        }
+      },
+      "Fody/6.3.0": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Costura.Fody/4.1.0": {
+      "sha512": "MkW5aqhqNvuP6MiaaD5Yx8efXv+5ucsumRx+Nsn5b+PA4RnaxJLtXhGkm1N+Hi7sjkSlL8kl1klSS/7v2DxZHw==",
+      "type": "package",
+      "path": "costura.fody/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Costura.Fody.props",
+        "costura.fody.4.1.0.nupkg.sha512",
+        "costura.fody.nuspec",
+        "lib/net40/Costura.dll",
+        "lib/net40/Costura.xml",
+        "weaver/Costura.Fody.dll",
+        "weaver/Costura.Fody.xcf"
+      ]
+    },
+    "Fody/6.3.0": {
+      "sha512": "kBGlW/vBUvBSyCvFI3YICNl77gjUr0KMROlBTeBPN/+J3JMU57w1dpXPwjmU4ahdBTYLomzgxKLaJ3jVNuXuQg==",
+      "type": "package",
+      "path": "fody/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/Fody.targets",
+        "fody.6.3.0.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "Costura.Fody >= 4.1.0",
+      "Fody >= 6.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gaoxi\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj",
+      "projectName": "NetchUpdater",
+      "projectPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\NetchUpdater.csproj",
+      "packagesPath": "C:\\Users\\gaoxi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gaoxi\\Documents\\GitHub\\Netch\\NetchUpdater\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\gaoxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "Costura.Fody": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
+          "Fody": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.3.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win7-x64": {
+        "#import": []
+      }
+    }
+  }
+}

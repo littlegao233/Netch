@@ -1,0 +1,10 @@
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\bin\x64\Release\NetchUpdater.exe.config
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\bin\x64\Release\NetchUpdater.exe
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\bin\x64\Release\NetchUpdater.pdb
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.csprojAssemblyReference.cache
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.Properties.Resources.resources
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.csproj.GenerateResource.cache
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.csproj.CoreCompileInputs.cache
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.exe
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.pdb
+C:\Users\gaoxi\Documents\GitHub\Netch\NetchUpdater\obj\x64\Release\NetchUpdater.csproj.Fody.CopyLocal.cache
